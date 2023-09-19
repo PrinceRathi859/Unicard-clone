@@ -1,38 +1,338 @@
-.App {
-  text-align: center;
+
+.fl {
+  display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flc {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.full-wd {
+  width: 100%;
+}
+
+.jc {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.jsb {
+  justify-content: space-between;
+}
+
+.ac {
+  align-items: center;
+}
+
+.gp-20 {
+  gap: 20px;
+}
+
+.header-section {
+  height: 100vh;
+}
+
+.header-video {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.header-content {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 120px;
+  height: 90px;
+}
+
+.paycheck-btn {
+  background-color: rgb(0, 0, 0, 0.6);
+  margin-top: 20px;
+  color: rgb(255, 255, 255);
+  padding: 11px 30px;
+  border-radius: 12px;
+  font-size: 16px;
+  border-width: 0;
+  cursor: pointer;
+}
+
+.paycheck-btn:hover {
+  background-color: black;
+  color: #5ad6c4;
+}
+
+.menu {
+  margin-top: 32px;
+  cursor: pointer;
+}
+
+.menu-items {
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  background: rgba(0,0,0,.6);
+  width: -webkit-fill-available;
+  padding: 20px 20px;
+  color: white;
+  font-size: 14px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-items .icon svg {
+  width: 16px;
+}
+
+.middle-header {
+  margin-top: 40px;
+}
+
+
+
+.tag-line {
+  font-size: 54px;
+  max-width: 600px;
+}
+
+.card-image {
+  width: 420px;
+  height: 420px;
+}
+
+
+.benefits-text {
+  font-weight: 500;
+  font-size: 16px;
+  margin-right: 6px;
+  margin-left: 6px;
+}
+
+.phone-input-wrapper {
+  background-color: black;
+  width: fit-content;
+  padding: 4px;
+  border-radius: 10px;
+}
+
+.phone-input-wrapper > input {
+  background-color: black;
+  border: none;
+  font-size: 16px;
+  padding: 8px;
+  height: auto;
+  caret-color: white;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.phone-input-wrapper > input:focus {
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.phone-input-wrapper > button {
+  background-color: rgb(253, 239, 120);
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.contact-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-info-wrapper.float {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  background: rgb(245, 245, 245);
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+}
+
+.contact-info-mobile {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 110%);
+}
+
+.contact-mobile-wrapper {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-info-mobile .apply-btn {
+  width: 100%;
+  background-color: rgb(253,239,120);
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  border-radius: 8px;
+  border: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-info-mobile .apply-btn.dis {
+  background: rgb(174,171,140);
+}
+
+.contact-mobile-wrapper .contact {
+  color: white;
+}
+
+.contact-mobile-wrapper .mob-input {
+  position: relative;
+  bottom: -12px;
+  border: 1px solid #fdef78;
+  font-size: 16px;
+  padding: 18px;
+  background: #192231;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  outline: none;
+  caret-color: white;
+  color: white;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  max-width: 320px;
+}
+
+.contact > label {
+  font-size: 10px;
+}
+
+.contact > input {
+  accent-color: white;
+}
+
+.middle-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-text {
+  font-size: 40px;
+  color: #9ea7ae;
+  font-weight: 400;
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-text p {
+  margin: 0;
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+.main-text p:nth-child(1) {
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.main-text p:nth-child(2) {
+  transition: transform 1.5s ease, opacity 1s ease;
+}
+
+.main-text p:nth-child(3) {
+  transition: transform 2s ease, opacity 1s ease;
+}
+
+.main-text p:nth-child(4) {
+  transition: transform 2.5s ease, opacity 1s ease;
+}
+
+.main-text .black {
+  color: black;
+  font-weight: 500;
+}
+
+.middle-section .icon-wrapper {
+  margin: 100px auto;
+  transition: transform 1s ease, opacity 1s ease;
+  transform: translateY(-50px);
+  opacity: 0;
+}
+
+.middle-section .icon-wrapper .icon {
+  background: linear-gradient(140.86deg, #65ECD8 11.07%, #FDEF78 80.28%);
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.middle-section .icon-wrapper .icon img {
+  width: 48px;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    width: 100px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .middle-header {
+    flex-direction: column-reverse;
+    gap: 32px;
+    margin-top: 60px;
+  }
+
+  .card-image {
+    width: 225px;
+    height: 225px;
+  }
+
+  .tag-line {
+    font-size: 30px;
+    max-width: 300px;
+  }
+
+  .benefits-text {
+    font-size: 14px;
+  }
+
+  .main-text {
+    font-size: 28px;
+    padding-top: 50px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .middle-section .icon-wrapper .icon {
+    width: 96px;
+    height: 96px;
+  }
+
+  .middle-section .icon-wrapper .icon img {
+    width: 32px;
   }
 }
